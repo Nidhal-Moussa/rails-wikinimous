@@ -1,0 +1,12 @@
+<div class='container'>
+  <div class="row">
+    <div class="col-6">
+      <% @articles.each do |article| %>
+        <h1><%= link_to article.title, article_path(article) %></h1>
+        <h2><%= article.content %></h2>
+      <% end %>
+    </div>
+    <hr>
+    <%= link_to 'create one', new_article_path %>
+  </div>
+</div>
