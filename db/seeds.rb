@@ -19,4 +19,3 @@ end
     content: fake_content
   )
 end
-puts "done"
