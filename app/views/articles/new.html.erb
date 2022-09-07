@@ -1,8 +1,5 @@
-<h2>create your article about naruto character </h2>
-<%= form_for @article do |f| %>
-<%= f.label :title %>
-<%= f.text_field :title %>
-<%= f.label :content %>
-<%= f.text_field :content %>
-<%= f.submit %>
-<% end %>
+<h1>New article</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', articles_path %>
